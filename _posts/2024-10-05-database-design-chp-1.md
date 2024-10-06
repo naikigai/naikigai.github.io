@@ -49,6 +49,8 @@ the potential problems?
 
 1.2. Suppose you want to store a large amount of personal data in a database. What features of a database system wouldn’t you need?  
      Ans - P ,S-not req ,  A - not req, L - not req , U  
+
+
 1.3. Consider some data that you typically manage without a database system (such as a shopping list, address book, checking account info, etc.).  
     (a) How large would the data have to get before you would break down and store it in a database system?  
     Ans - just store it in DB   
@@ -66,9 +68,9 @@ changes?
 we make the changes and then `add` the changes to staging , then commit the staged changes. By running the command , `git commit` , the commit has a id associated with it . using this id a file is created in `.git` and data is stored in it.   
 To revert `git revert` command is used , the data in .git is used to diff the current file and delete the changes , a new commit id with new changes is stored in .git and the old file with the old commit would be deleted / or maybe not if the same commit is in other branch.  
 For more info - 
-https://jvns.ca/blog/2023/09/14/in-a-git-repository--where-do-your-files-live-/#:~:text=git%20stores%20files%20in%20.&text=Every%20previous%20version%20of%20every,git%2Fobjects%20contains%202700%20files.  
-
-https://stackoverflow.com/questions/58479776/does-creating-a-git-branch-copy-all-of-the-source-code#:~:text=Creating%20a%20branch%20in%20Git%20copies%20nothing.  
+[here](https://jvns.ca/blog/2023/09/14/in-a-git-repository--where-do-your-files-live-/#:~:text=git%20stores%20files%20in%20.&text=Every%20previous%20version%20of%20every,git%2Fobjects%20contains%202700%20files.)  
+and
+[here](https://stackoverflow.com/questions/58479776/does-creating-a-git-branch-copy-all-of-the-source-code#:~:text=Creating%20a%20branch%20in%20Git%20copies%20nothing.)  
 
 (d) Many version control systems save updates in difference files, which are
 small files that describe how to transform the previous version of the file into the new one. If a user needs to see the current version of the file, the system starts with the original file and applies all of the difference files to it. How well does this implementation strategy satisfy the needs of a database system?  
