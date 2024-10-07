@@ -74,8 +74,19 @@ and
 
 (d) Many version control systems save updates in difference files, which are
 small files that describe how to transform the previous version of the file into the new one. If a user needs to see the current version of the file, the system starts with the original file and applies all of the difference files to it. How well does this implementation strategy satisfy the needs of a database system?  
+Ans - 
 P - since it is stored in files it is persisted  
 S - multiple users can use it until they commit push changes concurrent don't happen.   
 A - if u delete `.git` in local and remote there is no way to revert unless u have copy anywhere else. But power cuts and so won't be an issue.  
 L - Things get slow with very Large Repos , thats why Meta created their own VCS Sapling , they were using Mercurial before which is again not git as it was better than git  
 U - the commands are very useful to manipulate the data easily.   
+
+### Interesting Stuff told by Peers
+
+curl cheat.sh/latencies 
+<img width="835" alt="image" src="https://github.com/user-attachments/assets/2894a261-3ac4-448e-bd60-553e85e107b3">
+
+
+Andy Pavlov Database course on youtube
+
+
